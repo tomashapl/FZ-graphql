@@ -1,0 +1,20 @@
+type Query {
+    checkVignetteValidity(countryCode: String!, license: String!): Boolean
+}
+
+input CustomerInput {
+    email: String!,
+    phone: String,
+    name: String,
+    ic: String,
+    dic: String,
+    street: String,
+    city: String,
+    zip: String,
+    country: String!
+}
+
+
+type Mutation {
+    registerVignette(type: String!, countryCode: String!, license: String!, validityFrom: String!, customer: CustomerInput): Boolean
+}

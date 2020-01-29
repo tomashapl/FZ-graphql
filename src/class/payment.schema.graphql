@@ -1,0 +1,13 @@
+type ValidatePaymentURL {
+    status: Boolean!,
+    errorMessage: String,
+    errorCode: Int,
+}
+
+type Query {
+    validatePaymentURL(url: String!): ValidatePaymentURL
+}
+
+type Mutation {
+    getPaymentURL(orderNumber: String!, vignetteType: String!, merOrderNumber: String!, returnURL: String!): String
+}
