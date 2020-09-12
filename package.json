@@ -30,6 +30,6 @@
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
     "merge-graphql-schemas": "^1.5.8",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
